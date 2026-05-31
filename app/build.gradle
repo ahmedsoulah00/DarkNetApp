@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.darknet.configs'
+    namespace 'com.ahmed.darknet'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.darknet.configs"
+        applicationId "com.ahmed.darknet"
         minSdk 21
         targetSdk 34
         versionCode 1
