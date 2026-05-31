@@ -1,7 +1,5 @@
 package com.ahmed.darknet;
 
-
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     private Button fetchConfigButton, updateConfigButton;
     private View adminPanel;
     
-    // كلمة السر المعتمدة لأحمد
     private final String ADMIN_PASSWORD = "AHMED_VIP_DARK";
     private DatabaseReference mDatabase;
 
@@ -34,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // تهيئة قاعدة البيانات والواجهات
         mDatabase = FirebaseDatabase.getInstance().getReference().child("DarkNetConfig");
         
         configTextView = findViewById(R.id.configTextView);
@@ -44,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         updateConfigButton = findViewById(R.id.updateConfigButton);
         adminPanel = findViewById(R.id.adminPanel);
 
-        // جلب التحديث للمستخدمين
         fetchConfigButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // زر التحديث الخاص بالأدمن أحمد
         updateConfigButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             @Override
                             public void onCancelled(DatabaseError databaseError) {
-                                // معالجة الخطأ عند الإلغاء
+                                // معالجة الخطأ
                             }
                         });
                     }
