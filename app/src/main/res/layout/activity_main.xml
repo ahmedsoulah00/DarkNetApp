@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/configTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الكونفيج الحالي سيظهر هنا"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/fetchConfigButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="جلب التحديث الحالي"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:id="@+id/adminPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f0f0f0"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/adminPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="كلمة سر لوحة التحكم"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/newConfigInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="اكتب الكونفيج الجديد هنا"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/updateConfigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نشر وتحديث"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</LinearLayout>
