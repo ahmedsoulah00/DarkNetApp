@@ -1,4 +1,5 @@
-package com.ahmed.darknet;
+package com.darknet.configs;
+
 
 import android.os.Bundle;
 import android.view.View;
